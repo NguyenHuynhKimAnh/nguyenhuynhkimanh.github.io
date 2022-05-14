@@ -1,44 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-   <meta charset:"utf-8">
-   <title>Thông Tin Website</title>
- </head>
- <body background="1234.jpg">
-  <h3 align="center">
-		<font face="Lato" size="6">[LOGO]</font>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<font face="cinzel" size="4">
-			<a href="#"><a href="https://www..com">Trang chủ</a></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#"><a href="https://nguyenhuynhkimanh.github.io/Gioi-thieu.html">Tìm hiểu thêm về tôi</a></a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#"><a href="https://youtube.com/channel/UCYwfFnRnrHmW3jbXrmkD3zw">Youtube</a></a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#"><a href="https://www.facebook.com/nguyenhuynhkimanh.171003">Liên hệ với chúng tôi</a></a>&nbsp;&nbsp;&nbsp;&nbsp;
-		</font>
-	</h3>
-  <br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <h1 align="center">
-		<font face="Lato" color="#017bf5" size="7">
-			Trang web của tôi
-		</font>
-	</h1>
-	<h3 align="center">
-		<font face="Lato" color="#000" size="5">
-			Chào mừng đến với trang web
-		</font>
-	</h3>
-	<br />
-	<h3 align="center">
-	<a href="#">
-		<font face="Lato" color="#000">Bắt đầu tài khoản khách</font>
-	</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <button style="background-color:aqua";>Đăng nhập</style</button>
-    <button style="background-color:aqua;";>Đăng kí</style></button>
-	</h3>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br>
-    <h2 allign="right">
-      <p style="color:black";>Hotline:012716185</p>
-      <p style="color:black";>Email liên hệ : nhkanh@gmail.com</p>
-    </h2>
+<!DOCTYPE html >
+<html  lang = " en " >
+<head >
+    <meta  charset = " UTF-8 " >
+    <meta  http-equiv = " X-UA-Tương thích " content = " IE = edge " >
+    <meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+    <link  rel = " stylesheet " href = " https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css " >
+    <title > Xin chào </title >
+<style >
+    body{
+
+        background-image: url('https://tse2.mm.bing.net/th?id=OIP.jHqAhAkWjXYAhPRfKQMhdQHaE2&pid=Api&P=0&w=285&h=186');
+    background-repeat :no-repeat;
+    background-attachment :fixed;
+    background-size: 100% 100%;
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+  #header{
+    background-color: #131921;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 5px 0px;
+}
+#logo img{
+    max-width: 50px;
+    height: auto;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    color: #f8f8f8;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #131921;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    display: none;
+}
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border: 1px solid #d3cbff;
+    left: 0;
+}
+#main-menu ul.sub-menu li:hover>a{
+    border-bottom: 1px solid #6e6e6e;
+}
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 200px;
+    top : -15px;
+}
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+#main-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: #858585;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+}
+#main-menu .sub-menu li:hover>a{
+    color: crimson;
+}
+#main-menu .sub-menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    color: #858585;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 8px 0px; 
+}
+#main-menu .sub-menu>li.has-child:hover::after{
+    color: crimson;
+}
+#search-box{
+            background: #fff;
+            border-radius: 10px;
+        }
+        #search-box #search-text{
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            width: 0;
+            padding: 0;
+            transition: all 0.25s ease-in-out;
+        }
+        #search-box #search-text, #search-box #search-text:valid{
+            width: 150px;
+        }
+        #search-box #search-btn{
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+h1{
+    font-size: 80px;
+}
+header{
+    color:#fff;
+    text-align:center;
+    
+}
+a{
+    font-size: 25px;
+    color:aqua;
+}
+  </style>
+</head>
+
+<body>
+    <header>
+        <h1><marquee>Welcome to my website</marquee></h1>
+        <a href="https://nguyenhuynhkimanh.github.io">Trang chủ<a></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://nguyenhuynhkimanh1710.github.html">Giới thiệu<a></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://facebook.com/nguyenhuynhkimanh.171003">Thông tin<a></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://nguyenhuynhkimanh.github.io/Css.html">CSS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><br><form action="" id="search-box">
+            <input type="text" id="search-text"placeholder="Bạn muốn tìm gì?" required>
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+
+     <section>
+
+    </section>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
