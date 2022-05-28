@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e9d8f4;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  color: #58257b;
+}
+.logo img {
+  margin-top: 0px; 
+  float: left;
+  width: 150px;
+  height:150px;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #58257b;
+}
+
+/* Định dạng link điều hướng */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Thay đổi màu liên kết khi di chuột qua */
+.topnav a:hover {
+  background-color: #db7093;
+  color: white;
+}
+
+/* Tạo hai cột không bằng nhau, float cạnh nhau */
+/* Cột trái */
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+/* Cột phải */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #e9d8f4;
+  padding-left: 20px;
+}
+/* Hình ảnh tượng trưng */
+.fakeimg img{
+  width: 220px;
+  height:220px;
+  padding: 20px;
+}
+.fakeimg1 img {
+  height: 200px;
+  width: 400px;  
+}
+.fakeimg2 img {
+  max-width: 1000px;
+  height: auto;
+}
+/* Thêm định dạng thẻ cho bài viết */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card__avatar img{
+  width: 300px;
+  height: 200px;
+
+}
+ul li a{
+  text-decoration: none;
+  color: #000
+}
+ul li a:hover{
+  color: #6DAFE1;
+}
+/* Clear float khác sau các cột */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  margin-top: 10px;
+}
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+có chiều rộng dưới 700px */
+@media screen and (max-width: 700px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau
+khi màn hình có chiều rộng dưới 300px  */
+@media screen and (max-width: 300px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#" class="logo"><img src="22.jpg"></a>
+  <h1>Welcome to Website</h1>
+  <p>Theo Đuổi - Chinh Phục -Đam Mê</p>
+</div>
+<div class="topnav">
+  <a href="https://www.youtube.com/channel/UCYwfFnRnrHmW3jbXrmkD3zw/featured">Youtube</a>
+  <a href="https://www.facebook.com/Kim-Ánh-Vlogs-100843099012916/
+">Fanpage</a>
+  <a href="https://www.facebook.com/nguyenhuynhkimanh.171003">Facebook</a>
+  <a href="https://www.tiktok.com/@dolaa3000">TikTok</a>
+  <a href="https://nguyenhuynhkimanhdk@gmail.com"> Email</a>
+  <a href="https://github.com/NguyenHuynhKimAnh">Github</a>  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>KHOA ĐIỆN - ĐIỆN TỬ</h2>
+      <h5>LỚP: CÔNG NGHỆ THÔNG TIN K15B
+      <p>Nguồn: NGÔ THỊ MỸ DUYÊN</p> 
+      </h5>
+      <div class="fakeimg1" style="height:200px;width: 600px;"><img src="5.jpg"></div>
+    </div>
+    <div class="card">
+      <h2>Theo Đuổi Đam Mê & Chinh Phục Ước  </h2>
+      <h5>Nguyễn Huỳnh Kim Ánh</h5>
+      <div class="fakeimg2"><img src="22.jpg"></div>
+      <h2>Lý do bạn không thể theo đuổi được công việc đam mê của bạn?</h2>
+      <p> Có 3 lý do lớn nhất mà bạn không thể làm công việc đam mê đó là:</p>
+      <ul>
+        <li><p> Có thể bạn chưa biết cách biến sở thích thành công việc;</p></li>
+        <li><p> Bạn hiểu nhầm 2 chữ đam mê;</p></li>
+        <li><p> Bạn sợ những gì người ta nói;</p></li>
+      </ul>
+      <h2> Cách nào để theo đuổi đam mê?</h2>
+      <ul>
+      <li><p>Hãy tự tin vào chính bản thân mình và công việc bạn theo đuổi. Mọi khó khăn sẽ được phá bỏ bằng sự tự tin và nhiệt huyết đam mê của bạn.</p></li>
+      <li><p>Đam mê sẽ đưa bạn đến thành công, và thành công sẽ là câu trả lời cho mọi định kiến</p></li>
+      <li><p>Hãy tạo ra những điều mới, dẫn đầu các xu hướng mới, và hình thành thêm nhiều sự kết hợp mới. Và đừng bao giờ ngừng tìm kiếm.</p></li>
+      </ul> 
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Giới thiệu</h2>
+      <div class="card__avatar"><img src="22.jpg"></div>
+      <p>Xin chào mọi người. Mình tên là Nguyễn Huỳnh Kim Ánh, là sinh viên của trường Cao Đẳng Công Nghệ Kỹ Thuật Nha Trang. Hiện tại đang học ngành Công Nghệ Thông Tin</p> 
+      <p> Hiện tại mình lập kênh youtube có tên là:Kim Ánh Vlogs. Nhằm chia sẻ những hình ảnh về cuộc sống hằng ngày của mình. Đồng thời, giới thiệu đến với tất cả mọi người những trải nghiệm của các chuyến đi khám phá- ẩm thực- thử thách và những trò chơi thú vị. Giúp mọi người vui vẻ sau những ngày làm việc mệt nhọc.
+Rất mong được sự ủng hộ của mọi người bằng cái LIKE, SHARE và ĐĂNG KÝ KÊNH để ủng hộ mình nhé.!
+Cảm ơn mọi người.</p> 
+    </div>
+    <div class="card">
+      <h3>Nổi bật</h3>
+      <div class="fakeimg"><img src="1.jpg"></div>
+      <div class="fakeimg"><img src="4.jpg"></div>
+      <div class="fakeimg"><img src="7.jpg"></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/nguyenhuynhkimanh.171003" class="link">Facebook</a></li>
+        <li><a href="https://www.youtube.com/channel/UCYwfFnRnrHmW3jbXrmkD3zw/featured" class="link">Youtube</a></li>
+        <li><a href="https://www.tiktok.com/@dolaa3000" class="link">TikTok</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>© Bản quyền thuộc về Nguyễn Huỳnh Kim Ánh
+  <p>© Copyright Nguyễn Huỳnh Kim Ánh & Do not Reup</p>
+</h4>
+</div>
+
+</body>
+</html>
